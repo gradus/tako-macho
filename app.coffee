@@ -1,6 +1,7 @@
 coffeecup = require 'coffeecup'
 fs = require 'fs'
 tako = require 'tako'
+
 app = tako()
 app.route('/static/*').files('./static')
 

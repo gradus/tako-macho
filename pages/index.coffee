@@ -8,9 +8,8 @@ html lang: 'en', ->
   head ->
     meta charset: 'utf-8'
     title 'Tako Macho'
-
     meta name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1'
-    
+    link rel: 'stylesheet', href: '/static/stylesheets/app.css'
     link rel: 'stylesheet', href: '/static/stylesheets/base.css'
     link rel: 'stylesheet', href: '/static/stylesheets/skeleton.css'
     link rel: 'stylesheet', href: '/static/stylesheets/layout.css'
@@ -33,8 +32,11 @@ html lang: 'en', ->
          img height: '300px', width: '280px', class: 'fade_img3', src: "/static/images/tako2.jpg"
 
       div '.sixteen.columns', ->
-        h5 'A Tako/CoffeeCup Template'
-        a href: 'http://github.com/gradus/tako-macho', -> 'Github source'
+        div '#right', ->
+          h5 'A Tako/CoffeeCup Template'
+        div '#left', ->
+          a '.button.right', href: 'http://github.com/gradus/tako-macho', -> 'View Source Code on Github'
+
     script src: 'http://code.jquery.com/jquery-1.7.1.min.js'
     script src: '/static/javascripts/tabs.js'
 
