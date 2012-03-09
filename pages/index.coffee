@@ -23,7 +23,7 @@ html lang: 'en', ->
     div '.container', ->
       div '.sixteen.columns', ->
         h1 '.remove-bottom', style: 'margin-top: 40px', 'Tako Macho'
-        h5 'Version 0.0.1'
+        h5 'Version 0.0.2'
         hr()
       div '.one-third.column', ->
          img height: '300px', class: 'fade_img', src: "/static/images/macho.jpg"
@@ -35,6 +35,7 @@ html lang: 'en', ->
 
       div '.sixteen.columns', ->
         h5 'A Tako/CoffeeCup Template'
+        a href: 'http://github.com/gradus/tako-macho', -> 'Github source'
     script src: 'http://code.jquery.com/jquery-1.7.1.min.js'
     script src: '/static/javascripts/tabs.js'
 
