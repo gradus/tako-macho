@@ -1,2 +1,1 @@
-####Tako Macho is a boilerplate using [Tako Web Framework](https://github.com/mikeal/tako) and [CoffeeCup](http://github.com/gradus/CoffeeCup)
-
+####Tako Macho is a boilerplate using [Tako WebFramework](https://github.com/mikeal/tako), [CoffeeCup](http://github.com/gradus/CoffeeCup), [Coffeescript](http://coffeescript.org) and [Skeleton](http://www.getskeleton.com/)

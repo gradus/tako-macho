@@ -26,12 +26,11 @@ html lang: 'en', ->
         h5 'Version 0.0.2'
         hr()
       div '.one-third.column', ->
-         img height: '300px', class: 'fade_img', src: "/static/images/macho.jpg"
+         img height: '300px',width: '280px', class: 'fade_img', src: "/static/images/macho.jpg"
       div '.one-third.column', ->
-         img height: '300px', width: '300px', class: 'fade_img', src: "/static/images/tako.jpg"
-
+         img height: '300px', width: '280px', class: 'fade_img2', src: "/static/images/tako.jpg"
       div '.one-third.column', ->
-         img height: '300px', class: 'fade_img', src: "/static/images/tako2.jpg"
+         img height: '300px', width: '280px', class: 'fade_img3', src: "/static/images/tako2.jpg"
 
       div '.sixteen.columns', ->
         h5 'A Tako/CoffeeCup Template'
@@ -42,4 +41,8 @@ html lang: 'en', ->
   coffeescript -> 
       $(document).ready ->
         $('.fade_img').hide()
-        $('.fade_img').fadeIn(3000)
+        $('.fade_img').fadeIn(2000)
+        $('.fade_img2').hide()
+        $('.fade_img2').fadeIn(1000)
+        $('.fade_img3').hide()
+        $('.fade_img3').fadeIn(3000)
