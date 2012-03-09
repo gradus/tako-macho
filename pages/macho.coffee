@@ -14,7 +14,6 @@ html lang: 'en', ->
     link rel: 'stylesheet', href: '/static/stylesheets/skeleton.css'
     link rel: 'stylesheet', href: '/static/stylesheets/layout.css'
 
-
     comment '[if lt IE 9]>\r\n\t\t<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>\r\n\t<![endif]'
 
     link rel: 'shortcut icon', href: 'images/favicon.ico'
@@ -29,7 +28,7 @@ html lang: 'en', ->
 
       div '.sixteen.columns', ->
         h1 '.remove-bottom', style: 'margin-top: 40px', 'Tako Macho'
-        h5 'Version 0.0.2'
+        h5 'Version 0.0.3'
         hr()
       div '.one-third.column', ->
          img height: '300px',width: '280px', class: 'fade_img', src: "/static/images/macho.jpg"
@@ -39,16 +38,19 @@ html lang: 'en', ->
          img height: '300px', width: '280px', class: 'fade_img3', src: "/static/images/tako2.jpg"
 
       div '.sixteen.columns', ->
-
         a '.button.left', href: 'http://github.com/gradus/tako-macho', -> 'View Source Code on Github'
         div '.right', ->
-          h5 'A Tako/CoffeeCup Template'
-
+          h5 'A ', ->
+            text 'A '
+            a href: 'https://github.com/mikeal/tako', -> 'Tako' 
+            text ' / '
+            a href: 'https://github.com/gradus/coffeecup', -> 'CoffeeCup'
+            text ' Boilerplate'
 
     script src: 'http://code.jquery.com/jquery-1.7.1.min.js'
     script src: '/static/javascripts/tabs.js'
 
-  coffeescript -> 
+  coffeescript ->
       $(document).ready ->
         $('.fade_img').hide()
         $('.fade_img').fadeIn(2000)
