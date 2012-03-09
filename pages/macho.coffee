@@ -24,10 +24,11 @@ html lang: 'en', ->
 
       ul '.tabs', ->
         li ->
-          a '.active', href: 'https://github.com/mikeal/tako', 'Tako'
+          a '.active', href: '#simple', 'Simple'
         li ->
-          a href: '#lightweight', 'Macho'
-
+          a href: '#lightweight', 'Lightweight'
+        li ->
+          a href: '#mobileFriendly', 'Mobile'
 
 
       div '.sixteen.columns', ->
@@ -58,3 +59,4 @@ html lang: 'en', ->
         $('.fade_img2').fadeIn(1000)
         $('.fade_img3').hide()
         $('.fade_img3').fadeIn(3000)
+
