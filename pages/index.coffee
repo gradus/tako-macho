@@ -26,9 +26,7 @@ html lang: 'en', ->
         li ->
           a '.active', href: 'https://github.com/mikeal/tako', 'Tako'
         li ->
-          a href: '#lightweight', 'Macho'
-
-
+          a href: '/macho', 'Macho'
 
       div '.sixteen.columns', ->
         h1 '.remove-bottom', style: 'margin-top: 40px', 'Tako Macho'
@@ -42,10 +40,11 @@ html lang: 'en', ->
          img height: '300px', width: '280px', class: 'fade_img3', src: "/static/images/tako2.jpg"
 
       div '.sixteen.columns', ->
-        div '#right', ->
+
+        a '.button.left', href: 'http://github.com/gradus/tako-macho', -> 'View Source Code on Github'
+        div '.right', ->
           h5 'A Tako/CoffeeCup Template'
-        div '#left', ->
-          a '.button.right', href: 'http://github.com/gradus/tako-macho', -> 'View Source Code on Github'
+
 
     script src: 'http://code.jquery.com/jquery-1.7.1.min.js'
     script src: '/static/javascripts/tabs.js'
@@ -58,3 +57,5 @@ html lang: 'en', ->
         $('.fade_img2').fadeIn(1000)
         $('.fade_img3').hide()
         $('.fade_img3').fadeIn(3000)
+        $('.fade_macho').hide()
+        $('.fade_macho').fadeIn(99999)

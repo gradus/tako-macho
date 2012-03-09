@@ -7,7 +7,7 @@ html lang: 'en', ->
   comment '<![endif]'
   head ->
     meta charset: 'utf-8'
-    title 'Tako Macho'
+    title 'Macho Tako'
     meta name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1'
     link rel: 'stylesheet', href: '/static/stylesheets/app.css'
     link rel: 'stylesheet', href: '/static/stylesheets/base.css'
@@ -21,15 +21,11 @@ html lang: 'en', ->
   body ->
 
     div '.container', ->
-
       ul '.tabs', ->
         li ->
-          a '.active', href: '#simple', 'Simple'
+          a href: '/', 'Tako'
         li ->
-          a href: '#lightweight', 'Lightweight'
-        li ->
-          a href: '#mobileFriendly', 'Mobile'
-
+          a '.active', href: '/macho', 'Macho'
 
       div '.sixteen.columns', ->
         h1 '.remove-bottom', style: 'margin-top: 40px', 'Tako Macho'
@@ -38,15 +34,16 @@ html lang: 'en', ->
       div '.one-third.column', ->
          img height: '300px',width: '280px', class: 'fade_img', src: "/static/images/macho.jpg"
       div '.one-third.column', ->
-         img height: '300px', width: '280px', class: 'fade_img2', src: "/static/images/tako.jpg"
+         img height: '300px', width: '280px', class: 'fade_macho_men', src: "/static/images/macho_man.gif"
       div '.one-third.column', ->
          img height: '300px', width: '280px', class: 'fade_img3', src: "/static/images/tako2.jpg"
 
       div '.sixteen.columns', ->
-        div '#right', ->
+
+        a '.button.left', href: 'http://github.com/gradus/tako-macho', -> 'View Source Code on Github'
+        div '.right', ->
           h5 'A Tako/CoffeeCup Template'
-        div '#left', ->
-          a '.button.right', href: 'http://github.com/gradus/tako-macho', -> 'View Source Code on Github'
+
 
     script src: 'http://code.jquery.com/jquery-1.7.1.min.js'
     script src: '/static/javascripts/tabs.js'
@@ -55,8 +52,8 @@ html lang: 'en', ->
       $(document).ready ->
         $('.fade_img').hide()
         $('.fade_img').fadeIn(2000)
-        $('.fade_img2').hide()
-        $('.fade_img2').fadeIn(1000)
+        $('.fade_macho_men').hide()
+        $('.fade_macho_men').fadeIn(10000)
         $('.fade_img3').hide()
         $('.fade_img3').fadeIn(3000)
 
