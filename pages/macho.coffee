@@ -28,7 +28,7 @@ html lang: 'en', ->
 
       div '.sixteen.columns', ->
         h1 '.remove-bottom', style: 'margin-top: 40px', 'Tako Macho'
-        h5 'Version 0.0.3'
+        h5 'Version 0.0.4'
         hr()
       div '.one-third.column', ->
          img height: '300px',width: '280px', class: 'fade_img', src: "/static/images/macho.jpg"
@@ -47,8 +47,11 @@ html lang: 'en', ->
             a href: 'https://github.com/gradus/coffeecup', -> 'CoffeeCup'
             text ' Boilerplate'
 
+        div '.right_message', ->
+
     script src: 'http://code.jquery.com/jquery-1.7.1.min.js'
     script src: '/static/javascripts/tabs.js'
+    script src: '/socket.io/socket.io.js'
 
   coffeescript ->
       $(document).ready ->
@@ -58,4 +61,9 @@ html lang: 'en', ->
         $('.fade_macho_men').fadeIn(10000)
         $('.fade_img3').hide()
         $('.fade_img3').fadeIn(3000)
+        #socket = io.connect('http://localhost')
+        #socket.on('connect', () ->
+          #$('.right_message').prepend('<p>You just made a Macho Socket IO Connect')
+        #)
+
 

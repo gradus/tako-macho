@@ -2,7 +2,7 @@
   "author": "Kris Windham <kriswindham@gmail.com> (http://krwindham.nodejitsu.com)",
   "name": "tako-macho",
   "description": "A tako coffee-script template",
-  "version": "0.0.3-0",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/gradus/tako-macho.git"
@@ -19,7 +19,8 @@
     "coffee-script": "1.2.0",
     "coffeecup": "*",
     "uglify-js": "*",
-    "tako": "*"
+    "tako": "*",
+    "socket.io": "*"
   },
   "devDependencies": {
     "mocha": "0.12.1"

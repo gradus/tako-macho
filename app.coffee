@@ -3,6 +3,7 @@ fs = require 'fs'
 tako = require 'tako'
 
 app = tako()
+
 app.route('/static/*').files('./static')
 
 index = ''
@@ -18,6 +19,10 @@ app.route('/').methods('GET').html (req, resp) ->
 
 app.route('/macho').methods('GET').html (req, resp) ->
   resp.end machoMan()
+
+#app.sockets.on('connection', (socket) ->
+  #app.sockets.emit('message', { will: 'be received by everyone'})
+#)
 
 app.httpServer.listen(3000)
 

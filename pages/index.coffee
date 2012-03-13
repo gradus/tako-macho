@@ -30,7 +30,7 @@ html lang: 'en', ->
 
       div '.sixteen.columns', ->
         h1 '.remove-bottom', style: 'margin-top: 40px', 'Tako Macho'
-        h5 'Version 0.0.3'
+        h5 'Version 0.0.4'
         hr()
       div '.one-third.column', ->
          img height: '300px',width: '280px', class: 'fade_img', src: "/static/images/macho.jpg"
